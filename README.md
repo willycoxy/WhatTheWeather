@@ -1,5 +1,7 @@
 # WhatTheWeather
 
+https://willycoxy.github.io/WhatTheWeather/
+https://github.com/willycoxy/WhatTheWeather
    
 
   ## Table of Contents 
