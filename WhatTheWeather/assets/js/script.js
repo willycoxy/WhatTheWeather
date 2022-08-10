@@ -1,3 +1,5 @@
+// below vars give me the api, parameters and api key to get lon and lat from city search
+
 var api = 'https://api.openweathermap.org/data/2.5/weather?q=';
 var limit = '&limit=5&units=metric&appid='
 var apiKey = '0123c040b2d049cc913d5be6dd98652e';
@@ -39,6 +41,7 @@ const getWeather = (ev)=>{
                     var futureIconCode5 = data.daily[4].weather[0].icon;
                     var futureIconUrl5 = "http://openweathermap.org/img/w/" + futureIconCode5 + ".png";
 
+                    // uploads data into the page 
                     document.getElementById("titleDayOne").textContent = moment().add(1,"d").format("M/D/YYYY");
                     document.getElementById("titleDayTwo").textContent = moment().add(2,"d").format("M/D/YYYY");
                     document.getElementById("titleDayThree").textContent = moment().add(3,"d").format("M/D/YYYY");
@@ -80,18 +83,3 @@ document.addEventListener('DOMContentLoaded', ()=> {
 });
 
 
-
-
-
-
-
-// function saveData() {
-//     var text = $('')
-// }
-
-
-
- // document.getElementById('title').textContent = data.name + " " + moment().format('L')
-        // document.getElementById('temp').textContent = `Temp: ${data.main.temp} °C`
-        // document.getElementById('wind').textContent = `Wind: ${data.wind.speed} MPH`
-        // document.getElementById('humid').textContent = `Humidity: ${data.main.humidity} %`      
